@@ -1,0 +1,5 @@
+# SentinelX defensive local rules. Validate HOME_NET/EXTERNAL_NET before deployment.
+alert tcp $EXTERNAL_NET any -> $HOME_NET 3389 ( msg:"SentinelX - inbound RDP connection"; flags:S; sid:4202701; rev:1; )
+alert tcp $EXTERNAL_NET any -> $HOME_NET 445 ( msg:"SentinelX - inbound SMB connection"; flags:S; sid:4202702; rev:1; )
+alert tcp $HOME_NET any -> $EXTERNAL_NET 23 ( msg:"SentinelX - outbound Telnet session"; flags:S; sid:4202703; rev:1; )
+alert tcp $HOME_NET any -> $EXTERNAL_NET 5985 ( msg:"SentinelX - outbound WinRM HTTP connection"; flags:S; sid:4202704; rev:1; )

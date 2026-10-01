@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="SentinelX logo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4dd8ff"/>
+      <stop offset="0.55" stop-color="#2979ff"/>
+      <stop offset="1" stop-color="#9c4dff"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <path d="M60 7 106 25v31c0 29-18 47-46 58C32 103 14 85 14 56V25z" fill="#07111d" stroke="url(#g)" stroke-width="6" filter="url(#glow)"/>
+  <path d="M37 35 83 81M83 35 37 81" stroke="url(#g)" stroke-width="9" stroke-linecap="round"/>
+  <path d="M49 30 60 18l11 12M49 90 60 102l11-12" fill="none" stroke="#8be9ff" stroke-width="4" stroke-linecap="round"/>
+</svg>

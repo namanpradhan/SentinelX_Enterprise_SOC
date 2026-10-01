@@ -1,0 +1,12 @@
+SENTINELX v4.2.13 - Windows Start
+
+Preferred:
+1. Double-click START_SENTINELX.bat
+2. Wait for the SentinelX API console to show Application startup complete.
+3. Browser opens at http://127.0.0.1:8000
+
+If the launcher stops:
+- Double-click START_BACKEND_ONLY.bat if present, or RUN_BACKEND.bat.
+- Read the Python traceback in that console.
+
+Do not use a separate http.server or frontend proxy. SentinelX serves the UI and API from FastAPI on port 8000.

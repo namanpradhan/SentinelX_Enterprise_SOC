@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="SentinelX Enterprise Security Operations Center — defensive visibility, detection, investigation and response.">
+<meta name="theme-color" content="#07111d">
+<link rel="icon" href="/static/assets/sentinelx-mark.svg" type="image/svg+xml">
+<title>SentinelX — Enterprise SOC 4.2.13</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div id="loginScreen" class="login-screen hidden">
+  <div class="login-grid">
+    <div class="login-art">
+      <div class="brand large"><img class="brand-logo large-logo" src="/static/assets/sentinelx-logo.svg" alt="SentinelX"><div><b>SentinelX</b><span>ENTERPRISE SOC</span></div></div>
+      <h1>Security operations engineered for visibility, detection, investigation and response.</h1>
+      <p>Identity-aware access, network visibility, deterministic detections, vulnerability assessment, IDS/IPS telemetry and analyst assistance — designed for authorized defensive operations.</p>
+      <div class="login-points"><span>▣ Endpoint telemetry</span><span>⌁ Network discovery</span><span>⚠ Threat detection</span><span>◍ Vulnerability assessment</span><span>◈ IDS / IPS telemetry</span><span>✦ Analyst assistance</span></div>
+      <div id="loginBackendState" class="login-status">Checking SentinelX API…</div>
+    </div>
+    <form id="loginForm" class="login-card">
+      <div class="eyebrow">IDENTITY & ACCESS MANAGEMENT</div>
+      <h2>Sign in</h2>
+      <p class="muted">Use an authorized SentinelX account.</p>
+      <label>Username<input id="loginUser" autocomplete="username" required></label>
+      <label>Password<input id="loginPass" type="password" autocomplete="current-password" required></label>
+      <button class="btn primary wide" type="submit">Sign in securely</button>
+      <div id="loginError" class="login-error"></div>
+      <div class="login-security-note"><b>Authorized access only</b><small>Use the account issued by your SentinelX administrator. Default credentials are not displayed in the application.</small></div>
+    </form>
+  </div>
+</div>
+
+<div id="app" class="hidden">
+<aside class="sidebar">
+  <div class="sidebar-scroll">
+    <div class="brand"><img class="brand-logo" src="/static/assets/sentinelx-logo.svg" alt="SentinelX"><div><b>SentinelX</b><span>ENTERPRISE SOC</span></div></div>
+    <div class="workspace">SECURITY OPERATIONS</div>
+    <nav id="nav"></nav>
+  </div>
+  <div class="sidebar-bottom">
+    <div class="collector-pill"><i id="collectorDot"></i><div><b id="backendState">Checking backend…</b><span>FastAPI • SQLite • IAM</span></div></div>
+    <div class="footer-mini"><strong>SentinelX Enterprise SOC</strong><br>Detect • Analyze • Respond • Protect<br><span>Developed &amp; Maintained by Naman Pradhan</span><br><span>Cyber Security Engineer</span><br><a href="https://www.namanpradhan.me" target="_blank" rel="noopener">www.namanpradhan.me</a></div>
+  </div>
+</aside>
+<main class="main">
+  <header class="topbar">
+    <div class="top-left"><button class="mobile-menu" id="mobileMenu">☰</button><div class="crumb">Security Operations <span>/</span> <b id="viewTitle">Command Center</b></div></div>
+    <div class="top-actions">
+      <div class="user-chip"><span id="topUser">—</span><small id="topRole">—</small></div>
+      <div class="session-chip"><span>SESSION</span><b id="sessionTimer">—</b></div>
+      <button class="icon-btn" id="globalSearch">⌕ <kbd>Ctrl K</kbd></button>
+      <button class="icon-btn" id="refreshBtn">↻</button>
+      <button class="icon-btn" id="themeBtn">◐</button>
+      <div class="live"><i></i><span id="clock"></span></div>
+      <button class="btn" id="securityBtn">Security</button>
+      <button class="logout-btn" id="logoutBtn">Logout</button>
+    </div>
+  </header>
+  <section id="view" class="content"></section>
+</main></div>
+<div id="liveThreats" class="live-threat-stack"></div>
+<div id="toasts" class="toast-stack"></div>
+<div id="modal" class="modal hidden"><div class="modal-backdrop"></div><div id="modalCard" class="modal-card"></div></div>
+<div id="command" class="command hidden"><div class="command-card"><input id="commandInput" placeholder="Search workspaces or actions…"><div id="commandResults"></div></div></div>
+<script src="/static/app.js"></script>
+</body></html>

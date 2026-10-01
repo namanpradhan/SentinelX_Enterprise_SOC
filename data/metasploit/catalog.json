@@ -1,0 +1,16 @@
+[
+  {"type":"exploit","module":"exploit/windows/smb/ms17_010_eternalblue","family":"Windows/SMB","purpose":"Reference module for a historically significant SMB vulnerability assessment. Execution is not exposed in SentinelX.","severity":"critical","cve":"CVE-2017-0144","safe_mode":"metadata-only"},
+  {"type":"auxiliary","module":"auxiliary/scanner/smb/smb_version","family":"SMB","purpose":"Identify SMB service versions during authorized assessment.","severity":"medium","safe_mode":"scanner-reference"},
+  {"type":"auxiliary","module":"auxiliary/scanner/rdp/rdp_scanner","family":"RDP","purpose":"Identify RDP exposure during authorized assessment.","severity":"medium","safe_mode":"scanner-reference"},
+  {"type":"auxiliary","module":"auxiliary/scanner/ssh/ssh_version","family":"SSH","purpose":"Identify SSH service version information.","severity":"low","safe_mode":"scanner-reference"},
+  {"type":"auxiliary","module":"auxiliary/scanner/http/http_version","family":"HTTP","purpose":"Identify HTTP service versions and banners.","severity":"low","safe_mode":"scanner-reference"},
+  {"type":"auxiliary","module":"auxiliary/scanner/http/robots_txt","family":"HTTP","purpose":"Inspect robots.txt during authorized web assessment.","severity":"low","safe_mode":"scanner-reference"},
+  {"type":"auxiliary","module":"auxiliary/scanner/ftp/ftp_version","family":"FTP","purpose":"Identify FTP service version information.","severity":"low","safe_mode":"scanner-reference"},
+  {"type":"auxiliary","module":"auxiliary/scanner/mysql/mysql_version","family":"Database","purpose":"Identify MySQL service version information.","severity":"medium","safe_mode":"scanner-reference"},
+  {"type":"auxiliary","module":"auxiliary/scanner/postgres/postgres_version","family":"Database","purpose":"Identify PostgreSQL service version information.","severity":"medium","safe_mode":"scanner-reference"},
+  {"type":"auxiliary","module":"auxiliary/scanner/netbios/nbname","family":"Windows/NetBIOS","purpose":"Enumerate NetBIOS name information.","severity":"low","safe_mode":"scanner-reference"},
+  {"type":"auxiliary","module":"auxiliary/scanner/snmp/snmp_enum","family":"SNMP","purpose":"Assess SNMP exposure and inventory information with explicit authorization.","severity":"medium","safe_mode":"scanner-reference"},
+  {"type":"auxiliary","module":"auxiliary/scanner/winrm/winrm_auth_methods","family":"WinRM","purpose":"Identify WinRM authentication methods.","severity":"medium","safe_mode":"scanner-reference"},
+  {"type":"post","module":"post/windows/gather/enum_services","family":"Windows","purpose":"Reference post-exploitation inventory module. Execution is disabled from SentinelX.","severity":"high","safe_mode":"metadata-only"},
+  {"type":"payload","module":"payloads are not exposed in the SentinelX UI","family":"Safety","purpose":"SentinelX intentionally does not expose payload generation or delivery.","severity":"n/a","safe_mode":"disabled"}
+]
