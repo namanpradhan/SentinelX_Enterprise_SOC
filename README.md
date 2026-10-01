@@ -51,6 +51,7 @@ SIEM & Analytics
              │
              ▼
       Response & Remediation
+---
 
 ## Project Structure
 
@@ -76,7 +77,7 @@ SentinelX_Enterprise_SOC/
 ├── RUN_FRONTEND.bat
 ├── STOP_SENTINELX.bat
 └── README.md
-
+---
 
 ## 💻 Windows Quick Start
 
@@ -105,6 +106,7 @@ STOP_SENTINELX.bat
 
 git clone https://github.com/namanpradhan/SentinelX_Enterprise_SOC.git
 cd SentinelX_Enterprise_SOC
+---
 
 ## Create virtual environment:
 
@@ -121,10 +123,12 @@ pip install -r requirements.txt
 ## Configure the environment using:
 
 .env.example
+---
 
 ## Create a local .env file as required.
 
 Never commit passwords, API keys, tokens, certificates, private keys, .env, or confidential logs to GitHub.
+---
 
 ## 🔍 Validation
 
@@ -134,6 +138,7 @@ CHECK_SENTINELX.bat
 CHECK_SECURITY_STACK.bat
 
 ## These help verify the local SentinelX and security environment.
+---
 
 🤖 AI Security Analyst
 
@@ -152,6 +157,7 @@ Human Analyst Review
 Response Decision
 
 ## AI recommendations should be reviewed by qualified security personnel before high-impact actions.
+---
 
 ## 🎯 Security Workflow
 Detect
@@ -167,6 +173,7 @@ MITRE ATT&CK Mapping
 Respond
   ↓
 Remediate
+---
 
 ## 🔐 Responsible Use
 
@@ -181,6 +188,7 @@ Authorized vulnerability assessment
 Incident investigation
 
 Do not use the platform for unauthorized access, attacks, credential theft, malware deployment, destructive activity, or unauthorized exploitation.
+---
 
 ## 📚 Research Context
 
@@ -197,6 +205,7 @@ Incident response
 Security analytics
 
 ## The associated academic study is based primarily on secondary research and publicly available cybersecurity standards, literature, and industry guidance.
+---
 
 ## 🔮 Future Development
 
@@ -213,6 +222,7 @@ RBAC
 Security orchestration
 Improved AI investigation
 Performance benchmarking
+---
 
 ## 📖 Documentation
 
@@ -223,11 +233,14 @@ CHANGELOG.md
 SECURITY.md
 CONTRIBUTING.md
 WINDOWS_START_HERE.txt
+---
 
 ## 👨‍💻 Author
+---
 
 ## Naman Pradhan
 Cyber Security Engineer
+---
 
 ## GitHub:
 https://github.com/namanpradhan
